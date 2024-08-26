@@ -6,11 +6,11 @@ import './index.css'
 function App() {
 
   return (
-    <div className="w-[100vw] min-h-[100vh]">
+    <main className="relative w-[100vw] z-0">
       <Header />
       <Hero />
       <About />
-    </div>
+    </main>
   )
 }
 
