@@ -54,24 +54,24 @@ export default function Hero() {
   }
 
   return (
-    <div className="flex flex-col lg:flex-row lg:max-h-[530px] w-full font-spartan">
+    <div className="flex flex-col lg:flex-row lg:max-h-[533px] w-full font-spartan">
       <div className="relative w-full lg:w-[58%]">
-        <img src={heroDetails[index].imageD} alt={heroDetails[index].altText} className="hidden lg:block w-full h-[530px] object-cover" />
+        <img src={heroDetails[index].imageD} alt={heroDetails[index].altText} className="hidden lg:block w-full h-[533px] object-cover" />
         <img src={heroDetails[index].imageM} alt={heroDetails[index].altText} className="lg:hidden w-full max-h-[600px] object-cover object-bottom" />
         <div className="absolute bottom-0 right-0 lg:-right-[20%] w-[20%] flex">
           <button type="button" className="bg-primary-black py-4 lg:py-7 w-1/2 flex justify-center hover:bg-opacity-70" onClick = {() => handleToggle("left")}>
-            <img src={arrowL} alt="Arror left" />
+            <img src={arrowL} alt="Arror left" className="h-[16px] lg:h-[24px] object-contain" />
           </button>
           <button type="button" className="bg-primary-black py-4 lg:py-7 w-1/2 flex justify-center hover:bg-opacity-70" onClick = {() => handleToggle("right")}>
-            <img src={arrowR} alt="Arror right" />
+            <img src={arrowR} alt="Arror right" className="h-[16px] lg:h-[24px] object-contain" />
           </button>
         </div>
       </div>
-      <div className="w-full lg:w-[42%] flex flex-col items-start justify-center px-7 lg:px-12 xl:px-20 py-16">
-        <h1 className="font-semibold text-4xl lg:text-5xl mb-5 tracking-tight">{heroDetails[index].title}</h1>
-        <p className="text-primary-dark-grey leading-snug">{heroDetails[index].description}</p>
-        <div className="cursor-pointer mt-5 hover:text-primary-dark-grey">
-          <span className="pr-6 tracking-[0.7em]">SHOP NOW</span>
+      <div className="w-full lg:w-[42%] flex flex-col items-start justify-center px-7 lg:px-12 xl:px-[92px] py-14">
+        <h1 className="font-semibold text-4xl lg:text-5xl mb-3 lg:mb-5 lg:pl-2 tracking-tight">{heroDetails[index].title}</h1>
+        <p className="text-[16px] text-primary-dark-grey leading-snug lg:pl-2">{heroDetails[index].description}</p>
+        <div className="cursor-pointer lg:pl-2 mt-10 lg:mt-5 lg:mb-8 hover:text-primary-dark-grey">
+          <span className="lg:text-[14px] lg:font-semibold pr-6 tracking-[0.7em]">SHOP NOW</span>
           <img src={arrowIcon} alt="Arrow Icon" className="inline-block object-contain" />
         </div>
       </div>
